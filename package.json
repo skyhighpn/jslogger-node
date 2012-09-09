@@ -23,7 +23,8 @@
   , "license": "MIT"
   , "main": "./lib/jslogger"
   , "dependencies": {
-      "jasmine-node":   "latest"
+        "jasmine-node": "latest"
+      , "stubble": "latest"
     }
   , "scripts": {
     "test": "node_modules/jasmine-node/bin/jasmine-node --coffee spec"
