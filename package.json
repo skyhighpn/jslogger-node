@@ -1,0 +1,31 @@
+{
+    "name": "jslogger"
+  , "version": "1.0.0"
+  , "description": "JSLogger library"
+  , "keywords": [
+       "jslogger",
+       "javascript",
+       "log",
+       "errors",
+       "events",
+       "cloud"
+    ]
+  , "repository": {
+       "type": "git",
+       "url": "http://github.com/jslogger/jslogger-node.git" 
+    }
+  , "maintainers": [{
+        "name": "JSLogger"
+      , "email": "support@jslogger.com"
+      , "url": "http://jslogger.com"
+      , "twitter": "jsloggercom"
+    }]
+  , "license": "MIT"
+  , "main": "./lib/jslogger"
+  , "dependencies": {
+      "jasmine-node":   "latest"
+    }
+  , "scripts": {
+    "test": "node_modules/jasmine-node/bin/jasmine-node --coffee spec"
+  }
+}
