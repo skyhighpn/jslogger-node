@@ -17,7 +17,7 @@ describe "JSLogger", ()->
     expect(jslogger.host).toEqual("jslogger.com")
 
   it "has a port", ()->
-    expect(jslogger.port).toEqual("6987")
+    expect(jslogger.port).toEqual(80)
 
   it "assigns the given secret key", ()->
     expect(jslogger.key).toEqual("SECRET_KEY")

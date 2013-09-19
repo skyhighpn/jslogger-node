@@ -5,7 +5,7 @@ class JSLogger
   
   host: "jslogger.com"
 
-  port: "6987"
+  port: 80
 
   key: null
 
