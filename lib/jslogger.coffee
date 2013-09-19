@@ -52,7 +52,7 @@ class JSLogger
       postReq = http.request postOptions, (res)->
         res.setEncoding("utf8")
         res.on "data", (chunk)->          
-          console.log("JSLogger response: #{chunk}") if typeof NODE_ENV is "undefined" or NODE_ENV isnt "production"
+          console.log("JSLogger response: #{chunk}") if process.env.NODE_ENV isnt "production"
       postReq.on "error", (e)->
         console.log("JSLogger problem with request: #{e.message}")
       postReq.write(postData)
