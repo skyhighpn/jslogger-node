@@ -38,7 +38,7 @@ logger.event({auth: {action: "Sign up", username: "doomhz"}});
 
 You can set the `track` to `false` in development or testing mode
 ```javascript
-var track = typeof NODE_ENV !== "undefined" && NODE_ENV === "production" ? true : false;
+var track = process.env.NODE_ENV === "production" ? true : false;
 var logger2 = require("jslogger")({key: "SECRET_KEY", track: track});
 ```
 
